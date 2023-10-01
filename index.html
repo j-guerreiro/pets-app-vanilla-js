@@ -5,7 +5,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cute Pets App</title>
-  <script src="script.js"></script>
   <link rel="stylesheet" type="text/css" href="global.css" />
   <link rel="stylesheet" type="text/css" href="media-queries.css" />
   <link rel="stylesheet" type="text/css" href="header.css" />
@@ -32,54 +31,12 @@
     </section>
 
     <h1>Our Pets</h1>
-    <section class="pet-list">
-      <!-- Pets list will be displayed here -->
-      <div class="pet-card">
-        <h2>Mel</h2>
-        <img src="./assets/pets/mel.jpeg">
-        <ul>
-          <li>Age: 10</li>
-          <li>Favorite: Likes to play</li>
-          <li>Race: Undefined</li>
-          <li>Weight: 10lbs</li>
-        </ul>
-      </div>
+    <section id="pet-cards" class="pet-list">
+      <!-- Pets list is dinamically being displayed here -->
 
-      <div class="pet-card">
-        <h2>Mel</h2>
-        <img src="./assets/pets/mel.jpeg">
-        <ul>
-          <li>Age: 10</li>
-          <li>Favorite: Likes to play</li>
-          <li>Race: Undefined</li>
-          <li>Weight: 10lbs</li>
-        </ul>
-      </div>
-
-      <div class="pet-card">
-        <h2>Mel</h2>
-        <img src="./assets/pets/mel.jpeg">
-        <ul>
-          <li>Age: 10</li>
-          <li>Favorite: Likes to play</li>
-          <li>Race: Undefined</li>
-          <li>Weight: 10lbs</li>
-        </ul>
-      </div>
-
-      <div class="pet-card">
-        <h2>Mel</h2>
-        <img src="./assets/pets/mel.jpeg">
-        <ul>
-          <li>Age: 10</li>
-          <li>Favorite: Likes to play</li>
-          <li>Race: Undefined</li>
-          <li>Weight: 10lbs</li>
-        </ul>
-      </div>
     </section>
   </main>
-  
+
   <footer>
     <nav>
       <ul>
@@ -90,5 +47,6 @@
     </nav>
   </footer>
 </body>
+  <script src="pet-listing.js"></script>
 
 </html>

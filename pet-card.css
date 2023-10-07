@@ -34,6 +34,17 @@
   }
 }
 
+.pet-card h2#pet-name {
+  font-size: 2.5rem;
+  cursor: pointer;
+  border: 1px solid darkkhaki;
+  border-radius: 15px;
+  padding: 10px;
+  font-weight: 100;
+  color: darkseagreen;
+  background: darkslateblue;
+}
+
 .pet-card {
   background: floralwhite;
   border: 1px solid rgb(209, 208, 208);
@@ -56,4 +67,11 @@
   flex-wrap: wrap;
   flex-direction: column;
   align-items: flex-start;
+}
+
+.pet-info-btn {
+  cursor: pointer;
+  padding: 5px;
+  margin: 10px;
+  width: 65%;
 }

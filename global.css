@@ -4,6 +4,18 @@ body {
   background-color: gainsboro;
 }
 
+main {
+  padding: 0 5% 5%;
+  margin-top: 15px;
+  border: 1px solid ghostwhite;
+  border-radius: 15px;
+  box-shadow: 1px 1px;
+}
+
+hr {
+  margin: 50px 0;
+}
+
 h1,
 h2,
 h3,
@@ -25,6 +37,7 @@ ul li {
   border: 1px solid darkgrey;
   border-radius: 10px;
   background: cornflowerblue;
+  background-image: url(/assets/bg/cats-paw-5325371_640.png);
 }
 
 .main-heading h1 {
@@ -33,6 +46,6 @@ ul li {
   padding: 10px;
   border: 1px solid darkgrey;
   border-radius: 10px;
-  background: cadetblue;
-  color: chartreuse;
+  background: #5f9ea091;
+  color: #FFFF;
 }

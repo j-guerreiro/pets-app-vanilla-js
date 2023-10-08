@@ -22,5 +22,17 @@ ul.nav-menu {
 }
 
 ul li a {
-  color: antiquewhite;
+  font-size: 1.3rem;
+}
+
+ul.nav-menu li a#home {
+  color: greenyellow;
+}
+
+ul.nav-menu li a#add-pet {
+  color: rgb(20, 225, 208);
+}
+
+ul.nav-menu li a#about {
+  color: blueviolet;
 }

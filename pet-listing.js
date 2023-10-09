@@ -1,37 +1,71 @@
-const cutePets = [
+let cutePets = [
   {
     petName: 'Melzushka',
     image: '/assets/pets/melzushka.png',
-    age: 14,
+    age: 14 + " years old",
     favorites: 'Loves to hunt!',
     race: 'Caramel',
-    weight: 8,
+    weight: 8 + " kg",
+  },
+  {
+    petName: 'Amora',
+    image: '/assets/pets/amora.png',
+    age: 1.5 + " years old",
+    favorites: 'Loves canned fish',
+    race: 'Undefined',
+    weight: 4.1 + " kg",
   },
   {
     petName: 'Mel',
     image: './assets/pets/mel.jpeg',
-    age: 16,
+    age: 16 + " years old",
     favorites: 'Loves to sleep all day!',
     race: 'Tabby',
-    weight: 4,
+    weight: 4 + " kg",
   },
   {
     petName: 'Felix',
     image: './assets/pets/felix.png',
-    age: 10,
-    favorites: 'Chasing birds all day long',
+    age: 10 + " years old",
+    favorites: 'Chasing birds',
     race: 'Undefined',
-    weight: 7,
+    weight: 7 + " kg",
   },
   {
     petName: 'Juquete',
-    image: './assets/pets/juquete.jpeg',
-    age: 12,
+    image: './assets/pets/juquete.png',
+    age: 12 + " years old",
     favorites: 'Being lazy all day',
     race: 'White tabby',
-    weight: 6,
+    weight: 6 + " kg",
+  },
+  {
+    petName: 'Chorinha',
+    image: './assets/pets/chorinha.jpeg',
+    age: 9 + " years old",
+    favorites: 'Sleeping on the couch',
+    race: 'Undefined',
+    weight: 7 + " kg",
+  },
+  {
+    petName: 'Beethoven',
+    image: './assets/pets/beethoven.jpeg',
+    age: 13 + " years old",
+    favorites: 'Plenty of food',
+    race: 'Undefined',
+    weight: 14 + " kg",
   },
 ];
+
+// Sort pets alphabetically
+const sortPetsByName = (arr, getter, order = 'asc') =>
+  arr.sort(
+    order === 'desc'
+      ? (a, b) => getter(b).localeCompare(getter(a))
+      : (a, b) => getter(a).localeCompare(getter(b))
+  );
+
+cutePets = sortPetsByName(cutePets, g => g.petName);
 
 const petCards = document.getElementById("pet-cards");
 
@@ -98,14 +132,14 @@ cutePets.forEach(pet => {
   weight.id = cardElements.liWeightId;
   weight.textContent = cardElements.liWeightTextContent;
 
-   // Show info
-   const petInfo = document.createElement('button');
-   petInfo.classList.add('pet-info-btn');
-   petInfo.textContent = 'Pet Info';
- 
-   petInfo.addEventListener('click', () => {
-     
-   });
+  // Show info
+  const petInfo = document.createElement('button');
+  petInfo.classList.add('pet-info-btn');
+  petInfo.textContent = 'Pet Info';
+
+  petInfo.addEventListener('click', () => {
+
+  });
 
   // Append the elements to the parent
   ul.appendChild(age);

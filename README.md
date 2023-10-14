@@ -8,6 +8,8 @@ and layers of functionalities during the course of the development.
 The idea of this project is to create a listing of pets that are added to the site, for displaying with basic visual
 pet information.
 
+You can check the live app on https://pets-app-vanilla-js.vercel.app/ on its current state.
+
 ### Technologies used
 
 * [HTML](https://developer.mozilla.org/en-US/docs/Web/Html)
